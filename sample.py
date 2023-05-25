@@ -5,7 +5,7 @@ import asyncio
 async def main():
     async with Client() as client:
         audio_query = await client.create_audio_query(
-            "おはよーございます。ずんだもんなのだ。あさのにゅーすおつたえるのだ。えんやすすすむ。やくはんとしぶりにいちじ1どる139えんだいまでねさがり24かのにゅーよーくがいこくかわせしじょーでわえんやすがすすみえんそーばわいちじ1どる139えんだいまでねさがりしたのだ。", speaker=1
+            "おはよーございます。ずんだもんなのだ。", speaker=1
         )
         with open("voice3.wav", "wb") as f:
             f.write(await audio_query.synthesis(speaker=1))

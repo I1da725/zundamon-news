@@ -16,8 +16,8 @@ def createcontents():
         print(n)
         #print(newstitle)
         #print(newscontents)
-        voiceovercontents = voiceovercontents + newstitle[n]
-        voiceovercontents = voiceovercontents + newscontents[n]
+        voiceovercontents = voiceovercontents + newstitle[n] + "　"
+        voiceovercontents = voiceovercontents + newscontents[n] + "　　"
     return voiceovercontents
 
 newsvoice = createcontents()
